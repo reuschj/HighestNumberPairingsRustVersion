@@ -4,15 +4,21 @@ use std::fmt::Formatter;
 use std::result::Result;
 use std::fmt::Error;
 
+/**
+ * Stores the results of a number pairing problem
+ */
 pub struct Results {
     best: f64,
     best_pairing: Vec<NumberPairing>,
     other: Option<Vec<NumberPairing>>,
 }
 
-// ResultsTuple = (best: Double, bestPairing: Set<NumberPairing>, other: [NumberPairing]?)
+/**
+  * A structure to define a problem by which takes two numbers that sum to a given amount (default to 8).
+  * The problem must find the largest number combination (determined by multiplying the difference by the product of the two numbers)
+  */
 pub struct NumberPairingProblem {
-    sum: f64,
+    pub sum: f64,
     runs_to_solve: u32,
     pub results: Option<Results>,
 }
