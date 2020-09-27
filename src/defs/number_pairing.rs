@@ -9,10 +9,8 @@ use std::marker::Copy;
 use std::clone::Clone;
 use crate::util::format_float;
 
-/**
- * A structure that stores two numbers that sum to a given amount.
- * Finds the product, the difference and the result of multiplying the difference and the product.
- */
+/// A structure that stores two numbers that sum to a given amount.
+/// Finds the product, the difference and the result of multiplying the difference and the product.
 pub struct NumberPairing {
     one_number: f64,
     pub sum: f64,
