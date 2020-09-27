@@ -1,3 +1,9 @@
 /target
 
 .DS_Store
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+.idea/highest_number_pairings.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
