@@ -121,7 +121,7 @@ impl NumberPairingProblem {
 
         // Set the search range and loop through each value in it
         let multiplier = 100_000_000.0;
-        let conversion = (1.0 / precision) * multiplier;
+        let conversion = (1.0 / precision) * &multiplier;
         let low_bound = (low * conversion).round() as usize;
         let high_bound = (high * conversion).round() as usize;
         for i in (low_bound..=high_bound).step_by(multiplier as usize) {
